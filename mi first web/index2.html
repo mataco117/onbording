@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Basic JS Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f8f4f4;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+        color:aqua;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: rgb(141, 42, 113);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Basic JS Website</h1>
+  <p id="message">This is a simple site with interactive JavaScript.</p>
+  <button onclick="sayHello()">Click Me</button>
+
+
+  <script>
+    function sayHello() {
+      alert("Hello from JavaScript!");
+      document.getElementById("message").innerText = "You clicked the button!";
+    }
+  </script>
+
+</body>
+</html>
